@@ -2,7 +2,7 @@
 ********************************
 <br>
 # DESCRIZIONE:
-Creazione della VM che farà da RDSH per il cliente e aggiunta della stessa al Dominio: wg.vecomp.cloud. 
+Creazione della VM che farà da RDSH p	er il cliente e aggiunta della stessa al Dominio: wg.vecomp.cloud. 
 Al termine è necessario verificare che sia stata spostata nella OU corretta e impostare indirizzo ip statico (dal Portale, non dalla VM).
 <br>
 # UTILIZZO
@@ -26,6 +26,6 @@ Specificare l'OU in cui spostare il server al termine della Join al dominio, va 
 Se lasciato BLANK finisce nella OU default: Computers <b>E VA SPOSTATO MANUALMENTE</b><br>
 <br>
 <br>
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fragedrk%2FAzureRM%2Fmaster%2FDEVRDSFARM%2FRDSH%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fragedrk%2FAzureRM%2Fmaster%2FVCP-RDSFARM-VM-Provisioning%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
