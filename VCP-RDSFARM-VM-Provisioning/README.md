@@ -1,4 +1,5 @@
 # Aggiunta HOST RDSH alla FARM
+********************************
 <br>
 # DESCRIZIONE:
 Creazione della VM che farà da RDSH per il cliente e aggiunta della stessa al Dominio: wg.vecomp.cloud. 
