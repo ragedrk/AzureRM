@@ -3,16 +3,16 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "adminPassword": {
-            "value": "ViaDominutti2"
+            "value": ""
         },
         "DomainPassword": {
-            "value": "ViaDominutti2"
+            "value": ""
         },
         "DescCliente": {
-            "value": "asd"
+            "value": "Cliente A"
         },
         "CodCliente": {
-            "value": 123
+            "value": "1234"
         }
     }
 }

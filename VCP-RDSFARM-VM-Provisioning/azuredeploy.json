@@ -33,9 +33,9 @@
     },
     "adminUsername": {
       "type": "string",
-      "defaultValue": "adm_vecomp",
+      "defaultValue": "",
       "metadata": {
-        "description": "Admin username della VM, lasciare invariato."
+        "description": "Admin username della VM."
       }
     },
     "adminPassword": {
@@ -81,14 +81,27 @@
       "type": "string",
       "defaultValue": "Standard_F1s",
       "allowedValues": [
-        {
-          "label": "poverta",
-          "value": "Standard_A1_v2"
-        },
-        {
-          "label": "swag",
-          "value": "Standard_A2_v2"
-        }
+        "Standard_A1_v2",
+        "Standard_A1_v2",
+        "Standard_A2_v2",
+        "Standard_A4_v2",
+        "Standard_A8_v2",
+        "Standard_A2m_v2",
+        "Standard_A4m_v2",
+        "Standard_A8m_v2",
+        "Standard_F1s",
+        "Standard_F2s",
+        "Standard_F4s",
+        "Standard_F8s",
+        "Standard_F16s",
+        "Standard_DS1_v2",
+        "Standard_DS2_v2",
+        "Standard_DS3_v2",
+        "Standard_DS4_v2",
+        "Standard_DS5_v2",
+        "Standard_DS11_v2",
+        "Standard_DS12_v2",
+        "Standard_DS13_v2"
       ],
       "metadata": {
         "description": "Tipo di VMs, verificare sul preventivo quale utilizzare."
@@ -111,9 +124,9 @@
     "DomainUsername": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "wg\\adm_vecomp",
+      "defaultValue": "dominio\\username",
       "metadata": {
-        "description": "Username dell'utenza abilitata al Join al Dominio, fromato wg\\adm_bellotti."
+        "description": "Username dell'utenza abilitata al Join al Dominio, fromato dominio\\username."
       }
     },
     "DomainPassword": {
@@ -233,7 +246,7 @@
       }
     },
     {
-      "comments": "Join domain - JsonADDomainExtension",
+      "comments": "Join al dominio",
       "apiVersion": "2015-06-15",
       "type": "Microsoft.Compute/virtualMachines/extensions",
       "name": "[concat(variables('VMsArray')[copyIndex()],'/joindomain')]",
