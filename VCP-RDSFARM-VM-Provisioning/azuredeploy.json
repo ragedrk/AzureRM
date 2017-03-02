@@ -82,7 +82,7 @@
       "defaultValue": "Standard_F1s",
       "allowedValues": [
         {
-          "label": "swag",
+          "label": "poverta",
           "value": "Standard_A1_v2"
         },
         {
