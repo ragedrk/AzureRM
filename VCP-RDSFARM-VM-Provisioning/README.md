@@ -25,6 +25,6 @@ Specificare l'OU in cui spostare il server al termine della Join al dominio, va 
 Se lasciato BLANK finisce nella OU default: Computers <b>E VA SPOSTATO MANUALMENTE</b><br>
 <br>
 <br>
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fragedrk%2FAzureARM%2Fmaster%2FDEVRDSFARM%2FRDSH%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fragedrk%2FAzureRM%2Fmaster%2FDEVRDSFARM%2FRDSH%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
