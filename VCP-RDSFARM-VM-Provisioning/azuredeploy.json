@@ -126,7 +126,7 @@
       "minLength": 1,
       "defaultValue": "dominio\\username",
       "metadata": {
-        "description": "Username dell'utenza abilitata al Join al Dominio, fromato dominio\\username."
+        "description": "Username dell'utenza abilitata al Join al Dominio, formato dominio\\username."
       }
     },
     "DomainPassword": {
