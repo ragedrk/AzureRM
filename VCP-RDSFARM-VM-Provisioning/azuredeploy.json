@@ -109,7 +109,7 @@
     },
     "windowsOSVersion": {
       "type": "string",
-      "defaultValue": "2016-Datacenter",
+      "defaultValue": "2012-R2-Datacenter",
       "allowedValues": [
         "2012-R2-Datacenter",
         "2016-Nano-Server",
@@ -117,7 +117,7 @@
         "2016-Datacenter"
       ],
       "metadata": {
-        "description": "Versione del Sistema Operativo, lasciare 2016-Datacenter se non vi è stato esplicitato un altro OS."
+        "description": "Versione del Sistema Operativo, lasciare 2012-R2-Datacenter se non vi Ã¨ stato esplicitato un altro OS."
       }
     },
 
@@ -126,7 +126,7 @@
       "minLength": 1,
       "defaultValue": "dominio\\username",
       "metadata": {
-        "description": "Username dell'utenza abilitata al Join al Dominio, formato dominio\\username."
+        "description": "Username dell'utenza abilitata al Join al Dominio, fromato dominio\\username."
       }
     },
     "DomainPassword": {
