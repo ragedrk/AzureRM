@@ -159,12 +159,13 @@
     "virtualNetworkName": "[resourceId(parameters('virtualNetworkResourceGroup'), 'Microsoft.Network/virtualNetworks', parameters('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('virtualNetworkName'),'/subnets/', parameters('subnetName'))]",
     "domainJoinOptions": 3,
-    "VMsArray": "[split(parameters('NomeVM'),',')]"
+    "VMsArray": "[split(parameters('NomeVM'),',')]",
+    "ASname" :  "[parameters('NomeAS')]"
   },
   "resources": [
     {
       "type": "Microsoft.Compute/availabilitySets",
-      "name": "[parameters('NomeAS')]",
+      "name": "[variables('ASname')]",
       "apiVersion": "2015-06-15",
       "location": "[resourceGroup().location]",
       "tags": {
@@ -172,8 +173,6 @@
         "CodCliente": "[parameters('CodCliente')]"
       },
       "properties": {
-        "platformFaultDomainCount": "3",
-        "platformUpdateDomainCount": "20"
       }
     },
     {
@@ -205,7 +204,8 @@
       "name": "[parameters('NomeVM')]",
       "location": "[resourceGroup().location]",
       "dependsOn": [
-        "[resourceId('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
+        "[resourceId('Microsoft.Network/networkInterfaces/', variables('nicName'))]",
+        "[resourceId('Microsoft.Compute/availabilitySets', variables('ASname'))]"
       ],
       "tags": {
         "DescCliente": "[parameters('DescCliente')]",
@@ -214,6 +214,9 @@
       "properties": {
         "hardwareProfile": {
           "vmSize": "[parameters('DimensioneVM')]"
+        },
+        "availabilitySet": {
+          "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('ASname'))]"
         },
         "osProfile": {
           "computerName": "[parameters('NomeVM')]",
