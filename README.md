@@ -2,7 +2,7 @@
 ********************************
 <br>
 # DESCRIZIONE:
-Creazione della VM che farà da RDSH p	er il cliente e aggiunta della stessa al Dominio: wg.vecomp.cloud. 
+Creazione della VM che farà da RDSH p	er il cliente e aggiunta della stessa al Dominio 
 Al termine è necessario verificare che sia stata spostata nella OU corretta e impostare indirizzo ip statico (dal Portale, non dalla VM).
 <br>
 # UTILIZZO
